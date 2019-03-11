@@ -64,12 +64,6 @@ function GameObjectThrowable:lift()
     self.state = 'throwed'
 end
 
-function GameObjectThrowable:fire(self, room, dx, dy)
-    self.projectile = true
-    self.room = room
-    self.onThrow(self, room, dx, dy)
-end
-
 function GameObjectThrowable:render()
     GameObject.render(self)
 end
